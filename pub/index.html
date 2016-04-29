@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Socket.IO Roshambo</title>
+        <script src="/socket.io/socket.io.js"></script>
+         <script type="text/javascript" src="game.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+        <h1>Socket.IO-Shambo</h1>
+        
+        </div>
+        <h3><p id="showSide"></p></h3>
+       <div id="showSide"></div>
+       <div class="results">
+           <table width="50%">
+               <th><label>Player one wins</label></th>
+               <th><label>Ties</label></th>
+               <th><label>Player two wins</label></th>
+                <tr>
+                    <td><input type="text" id="oneWin" readonly></td>
+                    <td><input type="text" id="tie" readonly></td>
+                    <td><input type="text" id="twoWin" readonly></td>
+               </tr>
+           </table>
+       </div>
+       <div id="display"></div>
+       <div id="weapons">
+           <a href="#"><img id="rock" src="rock.png"></a>
+           <a href="#"><img id="paper" src="paper.png"></a>
+           <a href="#"><img id="scissors" src="scissors.png"></a>
+       </div>
+       <div id="gameOver"></div>
+    </body>   
+</html>
